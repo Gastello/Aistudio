@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@font-face {
+  font-family: "Futura";
+  src: url("Futura-Bold.eot");
+  src: url("Futura-Bold.eot?#iefix") format("embedded-opentype"), url("Futura-Bold.woff") format("woff"), url("Futura-Bold.ttf") format("truetype"), url("Futura-Bold.svg#Futura-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Gallient";
+  src: url("Gallient-Regular.eot");
+  src: url("Gallient-Regular.eot?#iefix") format("embedded-opentype"), url("Gallient-Regular.woff") format("woff"), url("Gallient-Regular.ttf") format("truetype"), url("Gallient-Regular.svg#Gallient-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
