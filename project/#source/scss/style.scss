@@ -524,7 +524,7 @@ body {
       display: none;
    }
 }
-/*========================================================================*/
+/*====================================CONTACTS====================================*/
 .page {
    padding: 14px 0 0 0;
 }
@@ -636,6 +636,11 @@ body {
       }
    }
 }
+@media (max-width: 767.97px) {
+   .cover__title_contacts {
+      margin: 0px 0 -5px 0;
+   }
+}
 @media (max-width: 450px) {
    .contacts__row {
       flex-direction: column-reverse;
@@ -702,6 +707,11 @@ body {
       }
    }
 }
+@media (max-width: 767.98px) {
+   .cover__title_services {
+      margin: 0 0 -5px 0;
+   }
+}
 .container_services {
    display: flex;
 }
@@ -734,129 +744,131 @@ body {
    }
 }
 //==============================================STUDIO=====================================================
-.studio {
-   display: flex;
-   padding: 0 30px 50px 30px;
-   // .studio__row
+.container {
+   // .container_studio
 
-   &__row-1,
-   &__row-2,
-   &__row-3 {
-      max-width: 1100px;
-      width: 100%;
-      display: flex;
-      overflow: hidden;
+   &_studio {
+      max-width: 1042px + $paddingContainer * 2;
    }
 }
-.row-1,
-.row-2,
-.row-3 {
-   &__element {
+.studio {
+   padding: 75px 10px;
+   // .studio__row
+
+   &__row {
+      min-width: 100%;
+      display: flex;
+      height: 456px;
+   }
+
+   // .studio__image
+
+   &__image {
       img {
-         border-radius: 30px;
          max-width: 100%;
          width: 100%;
          height: 100%;
          object-fit: cover;
+         filter: drop-shadow(1px 25px 40px rgba(0, 0, 0, 0.25));
+         border-radius: 30px;
+      }
+      // .studio__image_bigger
+
+      &_bigger {
+         height: 55%;
+      }
+
+      // .studio__image_smaller
+
+      &_smaller {
+         height: 40%;
       }
    }
-}
-.container_studio {
-   margin: 0 auto;
-}
-.row-1 {
-   margin: 0 0 30px 0;
-   &__column {
-      padding: 0 7.5px;
-   }
-   & > div:nth-child(1) {
-      flex: 0 0 70%;
-   }
-   & > div:nth-child(2) {
-      flex: 0 0 30%;
+
+   // .studio__inner
+
+   &__inner {
+      row-gap: 15px;
       display: flex;
       flex-direction: column;
-      & > div:nth-child(1) {
-         height: 60%;
-         padding: 7.5px 0;
-      }
-      & > div:nth-child(2) {
-         height: 40%;
-         padding: 7.5px 0;
-      }
+      height: 100%;
    }
 }
-.row-2 {
-   margin: 0 0 30px 0;
-   &__column {
-      padding: 0 7.5px;
-   }
-   & > div:nth-child(1) {
-      flex: 0 0 33.333%;
-      display: flex;
-      flex-direction: column;
+.studio-row {
+   // .studio-row__1
+
+   &__1 {
+      gap: 15px;
+      margin-bottom: 50px;
       & > div:nth-child(1) {
-         height: 60%;
-         padding: 7.5px 0;
+         flex: 0 1 700px;
       }
       & > div:nth-child(2) {
-         height: 40%;
-         padding: 7.5px 0;
+         flex: 0 1 327px;
       }
    }
-   & > div:nth-child(2) {
-      flex: 0 0 33.333%;
-      align-self: stretch;
-      & > div {
-         height: 100%;
-      }
-   }
-   & > div:nth-child(3) {
-      flex: 0 0 33.333%;
-      display: flex;
-      flex-direction: column;
+
+   // .studio-row__2
+
+   &__2 {
+      gap: 15px;
+      margin-bottom: 50px;
       & > div:nth-child(1) {
-         height: 40%;
-         padding: 7.5px 0;
+         flex: 0 1 337px;
       }
       & > div:nth-child(2) {
-         height: 60%;
+         flex: 0 1 337px;
+      }
+      & > div:nth-child(3) {
+         flex: 0 1 337px;
       }
    }
-}
-.row-3 {
-   height: 450px;
-   // .row-3__column
-   &__column {
-      width: 100%;
-      .row-3__element {
-         padding: 0 7.5px;
-         height: 100%;
+
+   // .studio-row__3
+
+   &__3 {
+      & > div:nth-child(1) {
+         flex: 0 1 100%;
          img {
-            max-height: 100%;
+            object-position: 50% 25%;
          }
       }
    }
 }
 @media (max-width: 1000px) {
-   .row-1,
-   .row-2,
-   .row-3 {
-      &__element {
-         img {
-            border-radius: 20px;
+   .studio__row {
+      height: 300px;
+   }
+}
+@media (max-width: 767.98px) {
+   .cover__title_studio {
+      margin: 0 0 15px 0;
+   }
+   .studio-row {
+      // .studio-row__1
+
+      &__1,
+      &__2,
+      &__3 {
+         flex-direction: column;
+         height: auto;
+         margin-bottom: 15px;
+         & > div:nth-child(n) {
+            flex: 0 1 auto;
          }
       }
    }
+   .studio__image {
+      height: 400px;
+   }
 }
-@media (max-width: 600px) {
-   .row-1,
-   .row-2,
-   .row-3 {
-      &__element {
-         img {
-            border-radius: 15px;
-         }
-      }
+@media (max-width: 500px) {
+   .studio__image {
+      height: 300px;
+   }
+}
+@media (max-width: 440px) {
+   .studio__image {
+      height: 250px;
    }
 }
