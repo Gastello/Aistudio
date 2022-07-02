@@ -1062,7 +1062,6 @@ body {
     display: flex;
     height: 456px; }
   .studio__image img {
-    max-width: 100%;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1073,9 +1072,8 @@ body {
   .studio__image_bigger {
     height: 55%; }
   .studio__image_smaller {
-    height: 40%; }
+    height: calc(45% - 15px); }
   .studio__inner {
-    row-gap: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1083,7 +1081,8 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100%; }
+    height: 100%;
+    gap: 15px; }
 
 .studio-row__1 {
   gap: 15px;
