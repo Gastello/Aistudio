@@ -70,6 +70,7 @@ $(document).ready(function () {
                settings: {
                   //новые ностройки
                   arrows: false,
+                  waitForAnimate: false,
                }
             }
          ],
