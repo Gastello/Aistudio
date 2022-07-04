@@ -1140,7 +1140,9 @@ body {
       -ms-flex: 0 1 auto;
       flex: 0 1 auto; }
   .studio__image {
-    height: 400px; } }
+    height: 400px; }
+  .studio {
+    padding: 30px 0; } }
 
 @media (max-width: 500px) {
   .studio__image {
